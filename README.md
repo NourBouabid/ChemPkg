@@ -1,6 +1,14 @@
-Développement d'un package Python pour la chimie : programmation orientée objet, packaging et tests unitaires.
+# chempkg — Package Python pour la modélisation chimique
 
-# Un package pour de la chimie
+**Programmation orientée objet · Packaging Python · Tests unitaires · Calcul scientifique**
+
+## Présentation
+
+`chempkg` est un package Python développé dans le cadre d'un projet de M1. Il propose des objets et des fonctions pour représenter des atomes et des molécules, examiner l'équilibrage de réactions chimiques et simuler une cinétique de décomposition simple.
+
+L'objectif du projet est aussi **logiciel** : organiser des fonctionnalités dans plusieurs modules, définir une interface Python, préparer un package installable et tester ses composants.
+
+# Architecture
 
 Ce repertoire est organisé de la maniere suivante:
 ```
@@ -18,7 +26,7 @@ Ce repertoire est organisé de la maniere suivante:
 `chempkg` est un package pour de la chime. Il contient trois modules: `atom`, `mol` et `reaction_utils`.
 
 ## Module atom
-Ce module permet de représenter des atomes.
+Ce module permet de représenter des atomes avec nombre d'électrons, masse atomique et configuration électronique approchée selon l'ordre de remplissage de Klechkowski
 
 ### Classe Atom  
 
@@ -42,7 +50,7 @@ Attributs :
 
 ## Module mol
 
-Ce module permet de manipuler des molécules à partir de leur formule chimique.
+Ce module permet de manipuler des molécules à partir de leur formule chimique: lecture de formules chimiques simples, composition atomique et calcul de masse molaire. 
 
 ### Classe Molecule  
 ```python
@@ -55,7 +63,7 @@ Molecule(formule: str)
 
 ## Module reaction_utils
 
-Ce module fournit des outils liés aux réactions chimiques et à la cinétique.
+Ce module fournit des outils liés aux réactions chimiques et à la cinétique, en particulier la vérification de l'équilibrage d'une réaction et la simulation d'une décomposition d'ordre 1. 
 
 ### Fonctions :
 ```python
