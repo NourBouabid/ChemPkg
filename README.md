@@ -1,3 +1,5 @@
+Développement d'un package Python pour la chimie : programmation orientée objet, packaging et tests unitaires.
+
 # Un package pour de la chimie
 
 Ce repertoire est organisé de la maniere suivante:
